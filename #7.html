@@ -1,0 +1,29 @@
+<!DOCTYPE html><!--文章宣言 形式-->
+<html lang="ja"><!-- 言語設定を日本語にしている　lang="ja"-->
+	<head><!--情報 -->
+		<meta charset="utf8">
+		<meta charset="description" content="初めてのHTML文書です。"><!--文章の説明-->
+		<title>初めてのHTML</title><!--ブラウザのタイトル（タブに表示される） --><!--ファビコン＝サイトを表示した時のアイコン-->
+		
+		<style>
+			body{background:red;}/*lll*/
+		</style><!--htmlだとstyle・css（言語）は見た目を変えるタグに書くそうすると書くことができるタグ -->
+		<link rel="stylesheet" href="mystyles.css">
+		 <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+		 <!--画像をアイコンにしたい場合に使うタグ -->
+	</head>
+	<body><!--本文 -->
+<!--グローバル属性＝そのタグ特有のものか全てのタグに当てはまるもの
+id:ページ内にひとつしかない場合に使う要素()
+class:複数ある要素
+style: スタイルを直接指定
+
+-->
+		<p id="message">こんにちは</p><!--idは他の要素がid="message"を持つことが出来ない ページ内でジャンプしたり他のプログラム要素を取得したりスタイリングする場合に使用する-->
+		<p class="message active">こんにちは</p><!-- idと違ってページ内に複数ある要素を指定する場合に使用　id
+		と違って複数あってもいい　同時に複数持てる。スペースで区切る。　idと同じ複数まとめて取得できたりスタイリングができる-->
+		<p class="message" style="background:red;">こんにちは</p><!--段落の背景色が変わる -->
+	</body>
+</html>
+<!-- htmlのコメントアウトの仕方-->
+<!-- -->
