@@ -14,21 +14,23 @@
 	</head>
 	<body>
 	 	<!--
-		form＝ユーザーから入力を受け付けてデータを送信するための仕組み
-		action=どこに？/ method=どうやって？
-		action属性＝フォームをどこに送るか？送信先をしていできる
-		method＝get/ post データを送る方方法を指定できる
-		method属性get＝入力したフォーム内容のデータがURIにくっついて送信される
-		method属性post＝入力したフォーム内容はURIとは別の場所に保管されてデータが送信される。
-		getとpostの違い
-		getには送信するデータ量の制限がある
-		しかしpostにはデータ量の制限はない
-		input＝ユーザからの入力を受け付ける部品とデータを送信するためのボタンをつける
+		input=テキスト入力欄や実行ボタン等フォームを構成する部品を作成するタグ
+			type="text"=１行テキストボックスを作ります。２行以上はtextareaを使用
+			type="submit"=送信ボタンを作る
+			type="password"＝パスワード入力ボックスを作る。入力したテキストがアスタリスク（＊）などに置き換えて使用する
+			type="hidden"を指定するとブラウザ上に表示されない非表示データを送信することができます
+			size属性=入力欄の幅を規定できる
+			maxlength属性=入力の最大値指定できる
+			value属性=初期値を指定できる
+			placeholder=データが入力されていない時にうっすら見える文字を代入するタグ　入力ガイド
 	 	-->	
 	 	<article>
 	 		<h1>アンケート</h1>
 	 		<form action="survey.php" method="post">
-	 			<p>メールアドレス: <input type="text" name="email"></p>	
+	 			<!-- <p>メールアドレス: <input type="text" name="email" size="50"maxlength="5" value="abc"></p>	 -->
+	 			<p>メールアドレス: <input type="text" name="email" size="50" placeholder="please enter email"></p>
+	 			<p>ログイン: <input type="password" name="password" ></p>	
+	 			<input type="hidden" name="user_id" value="23423">	
 				<p><input type="submit" value="送信"></p>
 	 		</form>
 	 	</article>
