@@ -1,0 +1,40 @@
+<!DOCTYPE html><!--文章宣言 形式-->
+<html lang="ja"><!-- 言語設定を日本語にしている　lang="ja"-->
+	<head><!--情報 -->
+		<meta charset="utf8">
+		<meta name ="description" content="初めてのHTML文書です。"><!--文章の説明-->
+		<title>初めてのHTML</title><!--ブラウザのタイトル（タブに表示される） --><!--ファビコン＝サイトを表示した時のアイコン-->
+		
+		<style>
+			body{background:white;}/*lll*/
+		</style><!--htmlだとstyle・css（言語）は見た目を変えるタグに書くそうすると書くことができるタグ -->
+		<link rel="stylesheet" href="mystyles.css">
+		 <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+		 <!--画像をアイコンにしたい場合に使うタグ -->
+	</head>
+	<body>
+	 	<!--
+		form＝ユーザーから入力を受け付けてデータを送信するための仕組み
+		action=どこに？/ method=どうやって？
+		action属性＝フォームをどこに送るか？送信先をしていできる
+		method＝get/ post データを送る方方法を指定できる
+		method属性get＝入力したフォーム内容のデータがURIにくっついて送信される
+		method属性post＝入力したフォーム内容はURIとは別の場所に保管されてデータが送信される。
+		getとpostの違い
+		getには送信するデータ量の制限がある
+		しかしpostにはデータ量の制限はない
+		input＝ユーザからの入力を受け付ける部品とデータを送信するためのボタンをつける
+	 	-->	
+	 	<article>
+	 		<h1>アンケート</h1>
+	 		<form action="survey.php" method="post">
+	 			<p>メールアドレス: <input type="text" name="email"></p>	
+				<p><input type="submit" value="送信"></p>
+	 		</form>
+	 	</article>
+	 	
+	</body>
+</html>
+<!-- htmlのコメントアウトの仕方-->
+<!--bodyの中のセクション、インデントには注意するちゃんとbodyの中にあるか確認する -->
+<!-- -->
