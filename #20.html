@@ -1,0 +1,48 @@
+<!DOCTYPE html><!--文章宣言 形式-->
+<html lang="ja"><!-- 言語設定を日本語にしている　lang="ja"-->
+	<head><!--情報 -->
+		<meta charset="utf8">
+		<meta name ="description" content="初めてのHTML文書です。"><!--文章の説明-->
+		<title>初めてのHTML</title><!--ブラウザのタイトル（タブに表示される） --><!--ファビコン＝サイトを表示した時のアイコン-->
+		
+		<style>
+			body{background:white;}/*lll*/
+		</style><!--htmlだとstyle・css（言語）は見た目を変えるタグに書くそうすると書くことができるタグ -->
+		<link rel="stylesheet" href="mystyles.css">
+		 <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+		 <!--画像をアイコンにしたい場合に使うタグ -->
+	</head>
+	<body>
+	 	<!--
+		input
+			checkbox=複数の選択肢を選ぶ場合使う
+			checked＝あらかじめチェックさせておきたい
+			radio＝複数の選択肢があるが一つだけ選ばせたい場合に使う
+		label=ラベルcheckbox、radioチェックできたり外したりできる。使う方法は
+			<label>で挟むか、ホーム部品とラベルが離れている場合は <label for="id">を使う。その前id="iPohone"が必要となる。
+	 	-->	
+	 	<article>
+	 		<h1>アンケート</h1>
+	 		<form action="survey.php" method="post">
+	 			
+	 			<p>メールアドレス: <input type="text" name="email"></p>
+	 			
+	 			<p>Phone:
+	 			<label> <input type="checkbox" name="phone" value="android" checked>Android</label>
+	 			<input type="checkbox" name="phone" value="iphone" id="iphone">  <label for="iPhone">iPhone</label></p>
+	 			<p>
+	 			Color: 
+	 			
+	 			<input type="radio" name="color" value="red" checked> Red
+	 			<input type="radio" name="color" value="blue"> Blue
+	 			</p>
+
+	 			<p><input type="submit" value="送信!" ></p>
+	 		</form>
+	 	</article>
+	 	
+	</body>
+</html>
+<!-- htmlのコメントアウトの仕方-->
+<!--bodyの中のセクション、インデントには注意するちゃんとbodyの中にあるか確認する -->
+<!-- -->
