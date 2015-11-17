@@ -1,0 +1,38 @@
+<!DOCTYPE html><!--文章宣言 形式-->
+<html lang="ja"><!-- 言語設定を日本語にしている　lang="ja"-->
+	<head><!--情報 -->
+		<meta charset="utf8">
+		<meta name ="description" content="初めてのHTML文書です。"><!--文章の説明-->
+		<title>初めてのHTML</title><!--ブラウザのタイトル（タブに表示される） --><!--ファビコン＝サイトを表示した時のアイコン-->
+		
+		<style>
+			body{background:white;}/*lll*/
+		</style><!--htmlだとstyle・css（言語）は見た目を変えるタグに書くそうすると書くことができるタグ -->
+		<link rel="stylesheet" href="mystyles.css">
+		 <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+		 <!--画像をアイコンにしたい場合に使うタグ -->
+	</head>
+	<body>
+	 	<!--
+		input
+			email(type="email")を指定するとメールアドレス入力欄が作成されます。
+			number(type="number")を指定すると数値の入力欄が作成される
+			date(type=date)を指定すると日付の入力欄が作成される
+			required=入力するとその入力項目が入力必須であることをブラウザに知らせる。
+			novalidate＝入力されたデータのバリエーション（妥当性チェック）をしないようにする際に使用します
+	 	-->	
+	 	<article>
+	 		<h1>アンケート</h1>
+	 		<form action="survey.php" method="post" novalidate>
+	 			<p>メールアドレス: <input type="email" name="email" required></p>
+	 			<p>料金: <input type="number" name="price"></p>
+	 			<p>誕生日: <input type="date" name="birthday"></p>
+	 			<p><input type="submit" value="送信!" ></p>
+	 		</form>
+	 	</article>
+	 	
+	</body>
+</html>
+<!-- htmlのコメントアウトの仕方-->
+<!--bodyの中のセクション、インデントには注意するちゃんとbodyの中にあるか確認する -->
+<!-- -->
