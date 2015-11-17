@@ -1,0 +1,40 @@
+<!DOCTYPE html><!--文章宣言 形式-->
+<html lang="ja"><!-- 言語設定を日本語にしている　lang="ja"-->
+	<head><!--情報 -->
+		<meta charset="utf8">
+		<meta name ="description" content="初めてのHTML文書です。"><!--文章の説明-->
+		<title>初めてのHTML</title><!--ブラウザのタイトル（タブに表示される） --><!--ファビコン＝サイトを表示した時のアイコン-->
+		
+		<style>
+			body{background:white;}/*lll*/
+		</style><!--htmlだとstyle・css（言語）は見た目を変えるタグに書くそうすると書くことができるタグ -->
+		<link rel="stylesheet" href="mystyles.css">
+		 <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+		 <!--画像をアイコンにしたい場合に使うタグ -->
+	</head>
+	<body>
+	 	<!--
+		textarea=閉じタグが必要、初期値がある　複数行にわたるテキスト入力欄を設置します。
+		name=データが送信される際の質問を指定する
+		cols=幅
+		rows=高さ
+		button=閉じタグが必要　ボタンそのまま ボタンを豪華にアレンジできる　input type="submit"もボタンの意味　<p><button type="submit">処理をする！</button></p>
+		disabled=テキストの入力部品を無効化する
+	 	-->	
+	 	<article>
+	 		<h1>アンケート</h1>
+	 		<form action="survey.php" method="post">
+	 			
+	 			<p>メールアドレス: <input type="text" name="email"disabled></p>
+	 			<p>コメント: <textarea name="commit"  cols="40" rows="5">	コメント</textarea></p>
+	 			<p><button type="submit"><strong>送信！</strong></button></p>
+	 			<p><button type="submit">処理をする！</button></p>
+				<p><input type="submit" value="送信!"　disabled></p>
+	 		</form>
+	 	</article>
+	 	
+	</body>
+</html>
+<!-- htmlのコメントアウトの仕方-->
+<!--bodyの中のセクション、インデントには注意するちゃんとbodyの中にあるか確認する -->
+<!-- -->
