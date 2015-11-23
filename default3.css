@@ -1,0 +1,18 @@
+/*
+#5属性セレクタを使ってみよう
+属性セレクタ　属性の見極め方＝htmlのスタイルにある属性をあるなしでスタイルつけたりその属性が特定の値であるかどうかでスタイルをつけたりできる。
+
+*/
+
+
+/*a[title]{ color: skyblue; }*/
+/*aタグに属性名を入れる書き方はa[title]{ color: skyblue; }こういうふうに書く
+この場合titleが属性になる！！　*/
+/*a[href="http://google.com"]{ color: orange; }*/
+/*ある属性がある特定だった場合　a[href="http://google.com"]{ color: orange; }　
+こういう書き方になる*/
+a[class~="search"]{ color: violet; }
+/*複数だった場合
+その複数の値が指定された場合そのうちどれかが条件が合致する場合スタイルを指定した時のセレクト
+クラス属性にサーチが含まれている場合a[class~="search"]{ color: violet; }こういうふうに書く~を忘れず入れる*/
+/**/
