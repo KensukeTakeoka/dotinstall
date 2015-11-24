@@ -1,0 +1,23 @@
+/*
+#4もっとセレクタを使ってみよう
+セレクタ　
+a,b
+a b
+a > b
+a + b
+ab
+
+h1,p{ color: skyblue; }同じスタイルを複数のセレクタに使う手法
+div span{ color: skyblue; }スペースはdivの下にある階層はspan全てこのスタイルにするタグ
+div > span{ color: skyblue; }divの直下にあるspanだけ対してスタイルを適用させる
+p + p{ color: skyblue; }pの次に来るp要素
+p.points{ color: skyblue; }p要素であって尚且つ.pointsクラスに適用される
+*/
+
+
+
+/*h1,p{ color: skyblue; }*/
+/*div span{ color: skyblue; }*/
+/*div > span{ color: skyblue; }*/
+/*p + p{ color: skyblue; }*/
+p.points{ color: skyblue; }
