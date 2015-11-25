@@ -1,0 +1,17 @@
+/*
+#7 擬似要素を使ってみよう
+セレクタ
+擬似要素　要素を一部を指定するときに使える。
+*/
+/*p:first-line{color: skyblue;}ある１行に色を変えたりしたい場合
+p:first-letter{color: skyblue;}一番最初の文字だけ色を変えたい場合
+p:before{content: "-->";}p要素の前に入れたい場合contentが必須になる
+p:after{content: "<--";}p要素の後に入れたい場合contentが必須になる
+*/
+
+p:before {
+	content: " --> ";
+}
+p:after {
+	content: " <-- ";
+}
