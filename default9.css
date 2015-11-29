@@ -1,0 +1,18 @@
+/*
+#10 ボックスモデルを理解しよう
+ボックスモデル 
+border　領域に枠線をつけれる
+padding borderと要素の間にある内側にある余白
+margin 外側にある領域で親要素との間
+*/
+/*
+*/
+
+body, html{ font-size: 100%; }
+/*なぜbody,htmlを書かないといけないかというと例この時のdivの親要素はbody
+とhtmlなので指定が必要*/
+div{ background: silver;
+/* width 200px;*/
+width: 50%;
+/* height: 100px; */
+height: 50%;}
