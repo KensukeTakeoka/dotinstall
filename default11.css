@@ -1,0 +1,22 @@
+/*
+#12 paddingで余白を制御しよう
+	
+	padding 内側の余白
+	margin 外側の余白
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	
+	padding:all;全て
+			top/bottom　right/left　１個の値が与える値が２つの場合 
+			top right/left bottom　3つの場合
+			top right bottom left　右回り
+
+*/
+/*
+*/
+body{margin:0; }
+div{
+	background: silver;
+}
