@@ -1,0 +1,30 @@
+/*
+#13 marginとmarginの相殺を理解しよう
+	marginの相殺=大きい方のmarginが対応される。
+
+	
+	margin 外側の余白
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	
+	margin:all;全て
+			top/bottom　right/left　１個の値が与える値が２つの場合 
+			top right/left bottom　3つの場合
+			top right bottom left　右回り
+
+	
+*/
+/*
+*/
+body{margin:0; }
+
+div#box1{
+	background: silver;
+	margin: 10px 20px 30px;
+}
+div#box2{
+	background: orange;
+	margin: 20px;
+}
