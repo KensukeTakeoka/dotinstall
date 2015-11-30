@@ -1,0 +1,22 @@
+/*
+#14 文字に関するプロパティを使ってみよう
+text
+-color: orange;文字色
+-font-size: 14px;フォントの大きさ
+-font-family: Arial, Helvetica;フォントの種類　優先順で記載　カンマ区切り
+-font-weight: bold/normal;　太字にしたい場合　太字bold　元に戻したい場合
+-text-align: right/center/left;　行揃え　
+-text-decoration:underline/line-through/none;下線を引きたい場合　line-through打ち消し線が出る　none最初から出てた打ち消し線を消す
+
+	
+*/
+/*
+*/
+p{
+	color: silver;
+	font-size: 24px;
+	font-family: Arial;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: underline line-through;
+}
